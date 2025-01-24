@@ -1,0 +1,18 @@
+
+.dropdown label {
+    margin-bottom: 8px;
+    margin-right: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--schiphol-blue);
+}
+
+.dropdown select {
+    padding: 10px;
+    border: 1px solid var(--grey-broken);
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--schiphol-blue);
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

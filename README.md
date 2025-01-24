@@ -1,3 +1,17 @@
+## CHOICES MADE
+
+## React + TypeScript + Vite
+Vite uses the esbuild bundler, which is much faster than the Webpack used in CRA. It owes its speed to the fact that it is written in Go
+— a fast, multithreaded language compiled to machine code,
+unlike Webpack, written using JavaScript, which is interpreted and single-threaded, which in turn makes it slower.
+
+## MSW
+I used MSW to mock the API calls. It is a tool to mock API calls and test the application without the need of a real server.
+
+## VITEST
+I used VITEST to test the application. It is a tool to test the application in a Vite environment.
+
+
 # Assignment
 
 Please create a page that contains an input field.
@@ -17,7 +31,7 @@ Please don't spend more than that unless you're having fun and want to show off 
 - Make it look nice. Make use of the provided colors. How you want to implement them is entirely your choice ;)
 - Your application should treat the contents of `flights.json` as the output of an API endpoint.
   It should load this asynchronously using XHR or Fetch API and should not require a page reload when the user changes their input.
-- Make sure the results are sortable. The filtered flight data should be sortable on date and (expected) time. Initial expected sorting is early to late. 
+- Make sure the results are sortable. The filtered flight data should be sortable on date and (expected) time. Initial expected sorting is early to late.
 
 ## Submission:
 
@@ -32,3 +46,7 @@ Please don't spend more than that unless you're having fun and want to show off 
 - We like readable code
 - We like using the latest features of ES6 where applicable
 - Last but not least, have fun!
+
+
+
+
