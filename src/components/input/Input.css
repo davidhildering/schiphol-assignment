@@ -6,13 +6,6 @@
     margin-top: 60px;
 }
 
-.input-label {
-    margin-bottom: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--schiphol-blue);
-}
-
 .input-field {
     padding: 10px;
     border: 1px solid var(--grey-overcast);

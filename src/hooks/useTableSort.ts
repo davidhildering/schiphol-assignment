@@ -18,6 +18,7 @@ const useTableSort = (flights: Flight[]) => {
     const sortedFlights = useMemo(() => {
         if (!sortConfig) return flights;
         const {direction} = sortConfig;
+        // make a shallow copy from the array to avoid mutating the original array
         return [...flights].sort((a, b) => {
             const dateComparison = new Date(a.date).getTime() - new Date(b.date).getTime();
             if (dateComparison !== 0) {

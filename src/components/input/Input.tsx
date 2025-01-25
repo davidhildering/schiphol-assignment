@@ -1,5 +1,6 @@
 import React from 'react';
 import './Input.css';
+import Label from '../label/Label';
 
 interface InputProps {
   searchTerm: string;
@@ -11,8 +12,9 @@ interface InputProps {
 const Input: React.FC<InputProps> = ({ searchTerm, setSearchTerm, label, placeholder }) => {
   return (
     <div className="input-container">
-      {label && <label className="input-label">{label}</label>}
+      {label && <Label htmlFor={`input-field-${label}`} text={label} />}
       <input
+        id={`input-field-${label}`}
         className="input-field"
         type="text"
         placeholder={placeholder}

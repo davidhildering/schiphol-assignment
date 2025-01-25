@@ -28,7 +28,7 @@ const FlightTable: React.FC<FlightTableProps> = ({flights}) => {
     return (
         <div className="flight-table-container">
             <Dropdown
-                handleSort={handleSort}
+                handleChange={handleSort}
                 label="Sort by"
                 testId={'dropdown-sort-by'}
                 options={filterOptions}/>
